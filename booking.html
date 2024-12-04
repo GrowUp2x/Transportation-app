@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Ride - FastTransport</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="logo">FastTransport</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="booking.html">Book a Ride</a></li>
+                    <li><a href="tracking.html">Track Shipment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form">
+        <div class="container">
+            <h2>Book Your Ride</h2>
+            <form>
+                <label for="pickUp">Pick-up Location</label>
+                <input type="text" id="pickUp" required>
+
+                <label for="dropOff">Drop-off Location</label>
+                <input type="text" id="dropOff" required>
+
+                <label for="vehicle">Vehicle Type</label>
+                <select id="vehicle" required>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="van">Van</option>
+                </select>
+
+                <label for="date">Date and Time</label>
+                <input type="datetime-local" id="date" required>
+
+                <button type="submit" class="cta-button">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FastTransport Co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

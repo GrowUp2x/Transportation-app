@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Shipment - FastTransport</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="logo">FastTransport</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="booking.html">Book a Ride</a></li>
+                    <li><a href="tracking.html">Track Shipment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Tracking Section -->
+    <section class="tracking">
+        <div class="container">
+            <h2>Track Your Shipment</h2>
+            <p>Enter your shipment ID to track your delivery status in real-time.</p>
+            <form>
+                <label for="shipmentId">Shipment ID</label>
+                <input type="text" id="shipmentId" required>
+
+                <button type="submit" class="cta-button">Track Shipment</button>
+            </form>
+
+            <div id="trackingResults" class="tracking-results" style="display:none;">
+                <h3>Shipment Status</h3>
+                <p>Status: In Transit</p>
+                <p>Estimated Arrival: 2 Days</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FastTransport Co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
